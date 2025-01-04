@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".RegisterActivity">
+
+    <!-- TextView with transparent background and rounded white border -->
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:padding="12dp"
+        android:text="Registration"
+        android:textColor="#E6E0E9"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />  <!-- Removed the background -->
+
+
+    <!-- EditText for Full Name with transparent background and rounded white border -->
+    <EditText
+        android:id="@+id/editTextAppFullName"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="#E6E0E9"
+        android:textColorHint="#CAC4D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+
+    <!-- EditText for Password with transparent background and rounded white border -->
+    <EditText
+        android:id="@+id/editTextAppContactNumber"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="#E6E0E9"
+        android:textColorHint="#CAC4D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+
+    <!-- EditText for Email with transparent background and rounded white border -->
+    <EditText
+        android:id="@+id/editTextAppAddress"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="#E6E0E9"
+        android:textColorHint="#CAC4D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
+
+    <!-- EditText for Confirm Password with transparent background and rounded white border -->
+    <EditText
+        android:id="@+id/editTextAppFees"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="#E6E0E9"
+        android:textColorHint="#CAC4D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
+
+    <!-- Button for Register -->
+    <Button
+        android:id="@+id/buttonBookAppointment"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#5F22F2"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:shadowColor="#000000"
+        android:text="Register"
+        android:textColor="#F4F3F6"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+
+    <!-- TextView for Existing User Link -->
+    <TextView
+        android:id="@+id/textViewExistingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="Already have an account?"
+        android:textColor="#D0BCFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBookAppointment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

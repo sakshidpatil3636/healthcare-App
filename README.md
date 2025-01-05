@@ -43,6 +43,7 @@ The **Healthcare App** is a mobile application developed for Android that provid
 - **Development Environment**: Android Studio  
 - **Logic**: Java  
 - **Frontend**: XML  
+- **Database**: SQLite  
 
 ---
 
@@ -53,4 +54,3 @@ The **Healthcare App** is a mobile application developed for Android that provid
 - Expand the database to include more tests, medicines, and doctor categories.  
 
 ---
-
